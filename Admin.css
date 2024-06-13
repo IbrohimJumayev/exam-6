@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+body button {
+  cursor: pointer;
+}
+
+.logout {
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+.logout #logout {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  border: none;
+  transition-duration: 0.4s;
+}
+.logout #logout:hover {
+  transform: scale(1.1);
+}
+
+.product-container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 50px;
+  padding-inline: 20px;
+}
+.product-container h1 {
+  font-family: "Courier New", Courier, monospace;
+  color: dodgerblue;
+  font-weight: 900;
+}
+.product-container form {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.product-container form input {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 10px 10px;
+  font-size: 17px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  transition-duration: 0.5s;
+}
+.product-container form input:focus {
+  transform: scale(1.08);
+}
+.product-container form textarea {
+  resize: vertical;
+  font-size: 17px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  transition-duration: 0.5s;
+  border-radius: 5px;
+  padding: 10px;
+}
+.product-container form textarea:focus {
+  transform: scale(1.08);
+}
+.product-container form #addProduct {
+  padding: 10px;
+  transition-duration: 0.4s;
+  font-size: 17px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.product-container form #addProduct:hover {
+  transform: scale(0.9);
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px 10px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 100%;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+}
+
+span {
+  color: dodgerblue;
+}
+
+.product-card p {
+  font-weight: 900;
+  font-size: 18px;
+  margin: 0;
+}/*# sourceMappingURL=Admin.css.map */

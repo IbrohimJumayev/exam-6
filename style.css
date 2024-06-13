@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #264ECA;
+}
+
+.container {
+  max-width: 500px;
+  background-color: #1E3270;
+  max-width: 450px;
+  margin: auto;
+  margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  padding: 40px 20px;
+  transition-duration: 0.5s;
+}
+.container:hover {
+  transform: scale(1.06);
+}
+.container form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.container form div {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid white;
+}
+.container form div input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-inline: 10px;
+  padding-block: 13px;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+.container form div label {
+  padding-inline: 5px;
+}
+.container form div label span {
+  color: white;
+  font-weight: 400;
+  width: 20px;
+  height: 20px;
+}
+.container form button {
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  padding: 13px;
+  transition-duration: 0.4s;
+}
+.container form button:hover {
+  transform: scale(0.9);
+}
+.container form button:active {
+  background-color: #1E3270;
+  color: white;
+}
+.container form #subBtn {
+  margin-top: 30px;
+}
+.container form #resetBtn {
+  background-color: #8a8d96;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-top: 100px;
+    margin-inline: 30px;
+  }
+  .container input {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
